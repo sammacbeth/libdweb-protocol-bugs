@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Custom protocol bugs</title>
+  </head>
+<body>
+  <p>This extension demonstrates bugs with custom protocols:</p>
+  <ol>
+    <li>
+      <p>Content editable - not selectable or editable on custom protocol page:</p>
+      <ul>
+        <li><a href="test://contenteditable/" target="_blank">Test page</a> <pre>test://contenteditable/</pre></li>
+        <li><a href="./contenteditable.html" target="_blank">Expected behaviour</a></li>
+      </ul>
+    </li>
+    <li>
+      <p>IndexedDB - cannot open database on custom protocol page</p>
+      <ul>
+        <li><a href="test://indexeddb/" target="_blank">Test page</a> <pre>test://indexeddb/</pre></li>
+        <li><a href="./indexeddb.html" target="_blank">Expected behaviour</a></li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>

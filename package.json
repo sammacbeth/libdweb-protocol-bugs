@@ -4,7 +4,7 @@
   "description": "",
   "main": "protocol.js",
   "scripts": {
-    "start": "MOZ_DISABLE_CONTENT_SANDBOX=1 web-ext run --firefox=firefoxdeveloperedition -u test://contenteditable/",
+    "start": "MOZ_DISABLE_CONTENT_SANDBOX=1 web-ext run --firefox=firefoxdeveloperedition"
   },
   "author": "",
   "license": "ISC",
