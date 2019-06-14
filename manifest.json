@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Protocol Bugs",
+  "description": "Extension containing libdweb protocol API",
+  "permissions": [],
+
+  "experiment_apis": {
+    "protocol": {
+      "schema": "node_modules/libdweb/src/toolkit/components/extensions/schemas/protocol.json",
+      "child": {
+        "scopes": ["addon_child"],
+        "paths": [["protocol"]],
+        "script": "node_modules/libdweb/src/toolkit/components/extensions/child/ext-protocol.js"
+      },
+      "parent": {
+        "events": ["startup"],
+        "scopes": ["addon_parent"],
+        "paths": [["protocol"]],
+        "script": "node_modules/libdweb/src/toolkit/components/extensions/parent/ext-protocol.js"
+      }
+    }
+  },
+  "background": {
+    "scripts": ["protocol.js"]
+  }
+}

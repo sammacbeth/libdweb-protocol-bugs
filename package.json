@@ -1,0 +1,15 @@
+{
+  "name": "libdweb-protocol-bugs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protocol.js",
+  "scripts": {
+    "start": "MOZ_DISABLE_CONTENT_SANDBOX=1 web-ext run --firefox=firefoxdeveloperedition -u test://contenteditable/",
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "web-ext": "^3.0.0",
+    "libdweb": "git+ssh://github.com/mozilla/libdweb"
+  }
+}
